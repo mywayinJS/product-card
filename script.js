@@ -1,21 +1,20 @@
-console.log('Hello world!');
 // покраска первой карточки
 
-const recolorFirstCardButton = document.getElementById('recolor-first-card-button');
+const firstCardRecolorButton = document.getElementById('recolor-first-card-button');
 const firstProductCard = document.querySelector('.product-card');
 const blueHashColor = '#0000FF';
 
-recolorFirstCardButton.addEventListener('click', () => {
-  firstProductCard.style.backgroundColor = blueHashColor;
+firstCardRecolorButton.addEventListener('click', () => {
+  firstCardRecolorButton.style.backgroundColor = blueHashColor;
 });
 
 // Покраска всех карточек
 
-const recolorAllCardsButton = document.getElementById('recolor-all-cards-button');
+const allCardsRecolorButton = document.getElementById('recolor-all-cards-button');
 const allProductCards = document.querySelectorAll('.product-card');
 const redHashColor = '#FF0000';
 
-recolorAllCardsButton.addEventListener('click', () => {
+allCardsRecolorButton.addEventListener('click', () => {
   allProductCards.forEach(
     card => card.style.backgroundColor = redHashColor
   )
@@ -29,21 +28,24 @@ googleOpenButton.addEventListener('click', openGoogle);
 function openGoogle() {
   const answer = confirm('Вы действительно хотите перейти на сайт Google?')
 
-  if (answer === true) {
+  if (answer) {
     window.open('https://google.com');
   } else {
     console.log('Пользователь отменил переход на Google')
   }
 };
 
+// Вывод текста заголовка в консоли с описанием логики каждой строки.
+
 // Находим заголовок по классу, сохраняем HTML-элемент в переменную title
 const title = document.querySelector('.products-title');
 // Вешаем слушатель с параметром наведения мыши
-title.addEventListener('mouseover', () => 
-  {
-    // Выводим в консоль текст который находится внутри заголовка
-    console.log(title.textContent)
+title.addEventListener('mouseover', () => {
+  // Выводим в консоль текст который находится внутри заголовка
+  console.log(title.textContent)
 });
+
+// Кнопка меняет цвет по клику и возвращает исходный цвет при повторном клике.
 
 const changeColorButton = document.getElementById('change-color-button');
 changeColorButton.addEventListener('click', () => {

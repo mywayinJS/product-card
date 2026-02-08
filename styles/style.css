@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
 }
 
-.buttons{
+.buttons {
   z-index: 1;
   display: flex;
   position: absolute;
@@ -24,7 +24,8 @@ body {
   width: 2000px;
   height: 100px;
 }
-.color-button{
+
+.color-button {
   border: 2px solid black;
   border-radius: 20px;
   background-color: black;
@@ -33,7 +34,7 @@ body {
   padding: 10px;
 }
 
-.color-button-active{
+.color-button-active {
   border: 2px solid black;
   border-radius: 20px;
   background-color: yellow;
@@ -42,7 +43,7 @@ body {
   padding: 10px;
 }
 
-#recolor-first-card-button{
+#recolor-first-card-button {
   border: 2px solid black;
   border-radius: 20px;
   top: 20px;
@@ -50,13 +51,15 @@ body {
   font-size: 20px;
   padding: 10px;
 }
-#recolor-all-cards-button{
+
+#recolor-all-cards-button {
   border: 2px solid black;
   border-radius: 20px;
   font-size: 20px;
   padding: 10px;
 }
-#open-google-button{
+
+#open-google-button {
   border: 2px solid black;
   border-radius: 20px;
   top: 20px;
