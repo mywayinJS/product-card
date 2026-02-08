@@ -1,5 +1,7 @@
 body {
   font-family: montserrat;
+  display: flex;
+  justify-content: center;
 }
 
 .main-parrent {
@@ -8,6 +10,59 @@ body {
   justify-content: center;
   width: 1280px;
   height: 1715px;
+  margin: 0 auto;
+}
+
+.buttons{
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  left: o auto;
+  justify-content: space-evenly;
+  margin: 20px;
+  gap: 20px;
+  width: 2000px;
+  height: 100px;
+}
+.color-button{
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: black;
+  color: yellow;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.color-button-active{
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: yellow;
+  color: black;
+  font-size: 40px;
+  padding: 10px;
+}
+
+#recolor-first-card-button{
+  border: 2px solid black;
+  border-radius: 20px;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  padding: 10px;
+}
+#recolor-all-cards-button{
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 10px;
+}
+#open-google-button{
+  border: 2px solid black;
+  border-radius: 20px;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  padding: 10px;
 }
 
 .products-title {
