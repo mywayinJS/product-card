@@ -17,7 +17,7 @@ const redHashColor = '#FF0000';
 allCardsRecolorButton.addEventListener('click', () => {
   allProductCards.forEach(
     card => card.style.backgroundColor = redHashColor
-  )
+  );
 });
 
 // Переход на страницу Google
@@ -31,9 +31,9 @@ function openGoogle() {
   if (answer) {
     window.open('https://google.com');
   } else {
-    console.log('Пользователь отменил переход на Google')
+    console.log('Пользователь отменил переход на Google');
   }
-};
+}
 
 // Вывод текста заголовка в консоли с описанием логики каждой строки.
 
@@ -42,12 +42,12 @@ const title = document.querySelector('.products-title');
 // Вешаем слушатель с параметром наведения мыши
 title.addEventListener('mouseover', () => {
   // Выводим в консоль текст который находится внутри заголовка
-  console.log(title.textContent)
+  console.log(title.textContent);
 });
 
 // Кнопка меняет цвет по клику и возвращает исходный цвет при повторном клике.
 
 const changeColorButton = document.getElementById('change-color-button');
 changeColorButton.addEventListener('click', () => {
-  changeColorButton.classList.toggle('color-button-active')
+  changeColorButton.classList.toggle('color-button-active');
 });
