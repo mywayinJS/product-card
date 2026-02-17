@@ -9,12 +9,13 @@ showCityTemp('Баку', 13);
 const LIGHT_SPEED = 299792458;
 
 function compareWithLightSpeed(speed) {
-  if (speed > LIGHT_SPEED)
+  if (speed > LIGHT_SPEED) {
     console.log('Сверхсветовая скорость!');
-  else if (speed < LIGHT_SPEED)
+  } else if (speed < LIGHT_SPEED) {
     console.log('Субсветовая скорость!');
-  else
+  } else {
     console.log('Скорость света!');
+  }
 };
 compareWithLightSpeed(299792458);
 
