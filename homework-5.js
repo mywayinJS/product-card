@@ -23,13 +23,14 @@ compareWithLightSpeed(299792458);
 let productName = ('Adidas Ozweego');
 let productPrice = (19990);
 
-function buyProfuct(budget) {
-  if (budget >= productPrice)
+function buyProduct(budget) {
+  if (budget >= productPrice) {
     console.log(`${productName} приобретён. Спасибо за покупку!`);
-  else
+  } else {
     console.log(`Вам не хватает ${productPrice - budget} ₽, пополните баланс!`);
+  }
 }
-buyProfuct(19980);
+buyProduct(19980);
 
 // (6) Для улучшения аналитических способностей
 // Не хватило фантазии придумать что-то крутое
