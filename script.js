@@ -5,7 +5,7 @@ const firstProductCard = document.querySelector('.product-card');
 const blueHashColor = '#0000FF';
 
 firstCardRecolorButton.addEventListener('click', () => {
-  firstCardRecolorButton.style.backgroundColor = blueHashColor;
+  firstProductCard.style.backgroundColor = blueHashColor;
 });
 
 // Покраска всех карточек
