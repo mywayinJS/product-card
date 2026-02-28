@@ -22,19 +22,19 @@ car.owner = user
 
 
 // 5. Создание функции принимающей объект №4, убедиться, что максимальная скорость есть, если нет - добавить.
-function ensureMaxSpeed(auto) {
+function addMaxSpeedIfMissing(auto) {
   if (!("maxSpeed" in auto)) {
     auto.maxSpeed = 180;
   };
 };
-ensureMaxSpeed(car);
+addMaxSpeedIfMissing(car);
 console.log(car);
 
 // 6. Создание функции, которая получает объект и свойство объекта, и показывает его значение
-function getInfo(obj, key) {
+function logProperty(obj, key) {
   console.log(obj[key])
 };
-getInfo(car, 'maxSpeed')
+logProperty(car, 'maxSpeed')
 
 // 7. Создать массив, который содержит названия продуктов (просто строки)
 let products = ["sugar", "bread", "eggs", "olive oil", "butter"];
