@@ -26,7 +26,7 @@ console.log(reverseMyArray(numbers));
 console.log(reverseMyArray(kitchen));
 
 // 6. Сделать константу экспортируемой.
-import { comments } from "../comments.js";
+import { comments } from "./comments.js";
 
 console.log(comments);
 
