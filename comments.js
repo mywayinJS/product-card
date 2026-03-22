@@ -1,4 +1,5 @@
 // 5. Добавить файл comments.js, в нём создать константу и в него поместить первые 10 объектов
+// 6. Сделать константу экспортируемой.
 export const comments = [
   {
     postId: 1,
@@ -70,4 +71,4 @@ export const comments = [
     email: "Carmen_Keeling@caroline.name",
     body: "voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis"
   }
-]
+];

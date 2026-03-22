@@ -1,3 +1,8 @@
+// 6. Сделать константу импортируеиой.
+import { comments } from "./comments.js";
+
+console.log(comments);
+
 // 2. Создать массив чисел от 1 до 10 и т.д.
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const newArray = numbers.filter(number => number >= 5);
@@ -13,9 +18,8 @@ const kitchen = [
   'холодильник'
 ];
 console.log(kitchen);
-const checkKitchen = kitchen.includes('посуда');
-
-console.log('Есть ли посуда:', checkKitchen);
+const hasDishes = kitchen.includes('посуда');
+console.log('Есть ли посуда:', hasDishes);
 
 // 4. Написать функцию, которая изменит порядок двух вышеуказанных массивов.
 function reverseMyArray(array) {
@@ -24,11 +28,6 @@ function reverseMyArray(array) {
 }
 console.log(reverseMyArray(numbers));
 console.log(reverseMyArray(kitchen));
-
-// 6. Сделать константу экспортируемой.
-import { comments } from "./comments.js";
-
-console.log(comments);
 
 // 7. Вывести в консоль массив тех комментариев, почта пользователей которых содержит ".com"
 const commentsWithCom = comments.filter(comment => comment.email.includes('.com'));
@@ -49,16 +48,17 @@ comments.forEach (comment => comment.isInvalid = comment.body.length >= 180);
 console.log(comments);
 
 // 11. Почитать про метод массива reduce. Используя его, вывести массив почт и провернуть тоже самое с помощью метода map
-const commentsEmailWithReduce = comments.reduce((acc, item, index, array) => {
+const commentsEmailByReduce = comments.reduce((acc, item, index, array) => {
   acc.push(item.email);
   return acc;
 },[]);
-console.log(commentsEmailWithReduce);
+console.log(commentsEmailByReduce);
 
 // вывод массива почт с помощью - map
-const commentsEmailWithMap = comments.map(comment => comment.email);
-console.log(commentsEmailWithMap);
+const commentsEmailByMap = comments.map(comment => comment.email);
+console.log(commentsEmailByMap);
 
 // 12. Почитать про методы toString(), join() и перебрав массив с задания №11, привести его к строке.
-const arrToString = commentsEmailWithReduce.toString();
+const arrToString = commentsEmailByReduce.toString();
 console.log(arrToString);
+
