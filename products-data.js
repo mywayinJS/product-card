@@ -1,18 +1,22 @@
 // 2. Создаем файл js, где будет хранится массив объектов, которые представляют собой продуктовые карточки из вёрстки
 export const products = [
   {
-    image: 'images/moisturizing-mousse.png',
+    image: 'moisturizing-mousse',
     label: 'для нормальной кожи',
     title: 'Увлажняющий мусс',
     description: 'Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.',
-    composition: ['активные натуральные комплексы', 'витамины С, А, РР, В И Е', 'солнцезащитные компоненты'],
+    composition: [
+      'активные натуральные комплексы',
+      'витамины С, А, РР, В И Е',
+      'солнцезащитные компоненты'
+    ],
     // текст composition потерял свойство тега "ul" за счет нарушения стилей, цена и сумма сдвинулись на край карточки.
     // приложу скрин для ясности
     price: 2750,
     currency: "₽"
   },
   {
-    image: 'images/moisturizing-mask.png',
+    image: 'moisturizing-mask',
     label: 'для нормальной кожи',
     title: 'Увлажняющая маска',
     description: 'Способствует удерживанию влаги в верхних слоях кожи.',
@@ -21,7 +25,7 @@ export const products = [
     currency: "₽"
   },
   {
-    image: 'images/cleansing-gel.png',
+    image: 'cleansing-gel',
     label: 'для нормальной кожи',
     title: 'Гель для умывания',
     description: 'Интенсивно очищает, не повреждает защитный барьер кожи.',
@@ -30,7 +34,7 @@ export const products = [
     currency: "₽"
   },
   {
-    image: 'images/gift-set-1.png',
+    image: 'gift-set-1',
     label: 'для нормальной кожи',
     title: 'Подарочный набор №1',
     description: 'Набор, состоящий из увлажняющего крема и маски.',
@@ -39,7 +43,7 @@ export const products = [
     currency: "₽"
   },
   {
-    image: 'images/gift-set-5.png',
+    image: 'gift-set-5',
     label: 'для нормальной кожи',
     title: 'Подарочный набор №5',
     description: 'Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.',
