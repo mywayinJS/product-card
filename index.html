@@ -16,7 +16,6 @@
 <body>
   <div class="buttons">
 
-    <!-- 5. Создать кнопку "Регистрация". Создать модальное окно, используя классы "modal, modal-showed" -->
     <button class="modal-open-button">Регистрация</button>
     <button id="change-color-button" class="color-button">Я умею менять цвет</button>
     <button id="recolor-first-card-button">Перекрасить фон первой карточки</button>
@@ -43,8 +42,6 @@
       </div>
     </template>
   </div>
-
-  <!-- 3. Сверстать данный footer, используя семантические теги (footer, nav и т.д.) -->
 
   <footer class="footer">
 
@@ -84,11 +81,10 @@
     </div>
   </footer>
 
-  <div class="overlay">
+  <div class="overlay" id="registration-overlay">
 
-    <!-- 6. Создать форму для регистрации внутри модального окна. -->
 
-    <div class="modal">
+    <div class="modal" id="registration-modal">
       <form class="registration-form" id="registration-form" novalidate>
         <label for="user-name">имя: <input type="text" id="user-name" name="user-name" placeholder="Введите имя"
             required></label>
@@ -117,14 +113,7 @@
     </div>
   </div>
   </div>
-
-  <script src="script.js"></script>
-  <script src="homework-5.js"></script>
-  <script src="homework-6.js"></script>
-  <script src="comments.js" type="module"></script>
-  <script src="homework-7.js" type="module"></script>
-  <script src="homework-8.js" type="module"></script>
-  <script src="homework-9.js" type="module"></script>
+  <script src="main.js" type="module"></script>
 </body>
 
 </html>
