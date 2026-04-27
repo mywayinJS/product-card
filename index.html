@@ -14,8 +14,10 @@
 </head>
 
 <body>
-
   <div class="buttons">
+
+    <!-- 5. Создать кнопку "Регистрация". Создать модальное окно, используя классы "modal, modal-showed" -->
+    <button class="modal-open-button">Регистрация</button>
     <button id="change-color-button" class="color-button">Я умею менять цвет</button>
     <button id="recolor-first-card-button">Перекрасить фон первой карточки</button>
     <button id="recolor-all-cards-button">Перекрасить фон всех карточек</button>
@@ -25,10 +27,7 @@
     <img src="images/bg-main.png" alt="" class="bg-image">
     <h1 class="products-title">Выбери свой продукт</h1>
     <div id="products-list"></div>
-    <!-- тег для сохранения продуктов "product-list" я изначально сделал "ul", но карточки не отображались
-     перезаписал на "div", всё работает, но хотелось бы разобраться почему не работало со списками "ul" -->
-    
-     <!-- 3. По аналогии из лекции — создать и реализовать шаблон для продуктовых карточек. -->
+
     <template id="product-card-template">
       <div class="product-card">
         <img class="product-card__img">
@@ -44,12 +43,88 @@
       </div>
     </template>
   </div>
+
+  <!-- 3. Сверстать данный footer, используя семантические теги (footer, nav и т.д.) -->
+
+  <footer class="footer">
+
+    <div class="footer__info-block">
+      <h2 class="info-block__title">Product cards</h2>
+      <p class="info-block__description">У нас самые лучшие продукты для кожи!</p>
+      <div class="info-block__icons-list">
+        <a class="icon-link" href="#">
+          <img class="icon-img" src="images/telegram-icon.png" alt="telegram-icon">
+        </a>
+        <a class="icon-link" href="#">
+          <img class="icon-img" src="images/vkontakte-icon.png" alt="vkontakte-icon">
+        </a>
+      </div>
+    </div>
+
+    <form class="footer__subscription-block">
+      <p class="subscription-block__title">Подпишись на наши акции:</p>
+      <div class="subscription-block__form">
+        <input class="subscription-block__email-input" placeholder="Введи Email..." name="email" type="email" required>
+        <img class="subscription__vertical-line" src="images/foot_vertical-line.png" alt="">
+        <button class="subscription-block__email-button">Подписаться</button>
+      </div>
+    </form>
+
+    <nav class="footer__nav-block">
+      <h3 class="nav-block__title">Быстрые ссылки</h3>
+      <ul class="nav-block__quick-links">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="footer__url-block">
+      <img class="url-block__horizontal-line" src="images/foot_horizontal-line.png" alt="">
+      <p class="url-block__adress">www.product-cards.com©all right reserve</p>
+    </div>
+  </footer>
+
+  <div class="overlay">
+
+    <!-- 6. Создать форму для регистрации внутри модального окна. -->
+
+    <div class="modal">
+      <form class="registration-form" id="registration-form" novalidate>
+        <label for="user-name">имя: <input type="text" id="user-name" name="user-name" placeholder="Введите имя"
+            required></label>
+
+        <label for="user-surname">фамилия: <input type="text" id="user-surname" name="user-surname"
+            placeholder="Введите фамилию" required></label>
+
+        <label for="user-birth-date">дата рождения: <input type="date" id="user-birth-date" name="user-birth-date"
+            required></label>
+
+        <label for="user-login">логин: <input type="text" id="user-login" name="user-login"
+            placeholder="Придумайте логин" required></label>
+
+        <label for="user-password">пароль: <input type="password" id="user-password" name="user-password"
+            placeholder="Придумайте пароль" required></label>
+
+        <label for="user-password-repeat">пароль: <input type="password" id="user-password-repeat"
+            name="user-password-repeat" placeholder="Повторите пароль" required></label>
+
+        <button type="submit" class="signup-button">Зарегистрироваться</button>
+
+        <button type="reset" class="reset-button">Сбросить</button>
+      </form>
+
+      <button class="modal-close-button">&times;</button>
+    </div>
+  </div>
+  </div>
+
   <script src="script.js"></script>
   <script src="homework-5.js"></script>
   <script src="homework-6.js"></script>
   <script src="comments.js" type="module"></script>
   <script src="homework-7.js" type="module"></script>
   <script src="homework-8.js" type="module"></script>
+  <script src="homework-9.js" type="module"></script>
 </body>
 
 </html>
