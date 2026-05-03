@@ -2,17 +2,15 @@ import { Modal } from './modal.js';
 import { Form } from './form.js';
 const modal = new Modal('registration-overlay')
 const registrationFormInstance = new Form('registration-form');
+const subscriptionFormInstance = new Form('subscription-form')
 
-const subscriptionBlock = document.querySelector('.footer__subscription-block')
+const subscriptionBlock = document.getElementById('subscription-form')
 subscriptionBlock.addEventListener('submit', (event) => {
   event.preventDefault();
-  const form = event.target;
-  const formData = new FormData(form)
-  const data = Object.fromEntries(formData.entries());
-  const input = event.target.querySelector('.subscription-block__email-input')
-  if (input.checkValidity() === false) {
+  if (!subscriptionFormInstance.isValid()) {
     return;
   }
+  const data = subscriptionFormInstance.getValues();
   console.log(data);
 });
 
@@ -50,10 +48,6 @@ registrationForm.addEventListener('submit', (event) => {
     isValid = false;
   }
   clearErrors();
-
-  if (!userName.value.trim()) errorForm('Введите имя', userName);
-  if (!userSurname.value.trim()) errorForm('Введите фамилию', userSurname);
-  if (userPass.value.trim().length < 6) errorForm('Пароль должен быть не менее 6 символов', userPass);
   if (userPassRepeat.value !== userPass.value) errorForm('Пароль не совпадает', userPassRepeat);
   if (isValid) {
     const data = registrationFormInstance.getValues();
