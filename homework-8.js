@@ -27,7 +27,6 @@ function renderProducts(products, cardsCount) {
   });
 }
 
-// 4. Используя метод .reduce(), получить массив объектов, где ключем является название продукта, а значением - его описание
 const productDescriptions = products.reduce((acc, item) => {
   acc.push({ [item.title]: item.description });
   return acc;
