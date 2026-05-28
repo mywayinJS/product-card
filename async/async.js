@@ -11,7 +11,16 @@ if (user == null) {
         localStorage.setItem('users', JSON.stringify(data));
         console.log(data);
         renderCards(data);
-      });
+      })
+      .catch(error => {
+        console.error('Ошибка загрузки данных', error);
+
+        const loader = document.getElementById('data-download');
+        if (loader) {
+          loader.remove();
+        }
+        alert('Не удалось загрузить данные. Попробуйте позже.');
+      })
   }, 3000);
 } else {
   const localData = localStorage.getItem('users')
@@ -69,5 +78,9 @@ getAllCardsBtn.addEventListener('click', () => {
       }
       localStorage.setItem('users', JSON.stringify(data));
       renderCards(data);
+    })
+    .catch(error => {
+      console.error('Ошибка загрузки данных', error);
+      alert('Не удалось загрузить данные. Попробуйте позже.');
     });
 })
