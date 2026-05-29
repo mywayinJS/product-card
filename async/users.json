@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Ivan",
+    "surname": "Ivanov",
+    "email": "ivanov123@gmail.com",
+    "age": 24
+  },
+  {
+    "id": 2,
+    "name": "Sergey",
+    "surname": "Kovalenko",
+    "email": "kovalenko@gmail.com",
+    "age": 32
+  },
+  {
+    "id": 3,
+    "name": "Lionel",
+    "surname": "Messi",
+    "email": "leomessi@gmail.com",
+    "age": 38
+  }
+]
